@@ -19,6 +19,9 @@ textarea {
   border-radius: 0px;
   width: 95%;
 }
+.perspective-1000{
+  perspective: 1000px;
+}
 textarea[type="input"]{
   max-height: 1em !important;
   min-height: 1.9em !important;
@@ -184,6 +187,12 @@ textarea:focus {
   z-index: 4;
   position: fixed;
   display: flex;
+}
+.z-index-15{
+  z-index: 15;
+}
+.z-index-10{
+  z-index: 10;
 }
 .cutted-50{
   width: 50%;
@@ -790,10 +799,10 @@ tbody tr:hover {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(180, 180, 180, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgb(255 255 255);
 }
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
 }
 input[type="checkbox"].ck-switch {
   font-size: 30px;
@@ -941,7 +950,9 @@ input[type="checkbox"].ck-switch:checked:after {
   outline: none;
   cursor: pointer;
 }
-
+.dashboard{
+  font-size: 0.7em;
+}
 .cp-workon-btn button.btn-checked {
   background: darkseagreen;
   border: 1px solid cadetblue;
@@ -1972,12 +1983,26 @@ ul,
   flex-flow: column;
   align-items: center;
 }
+.portfolio-menu{
+  box-shadow: 0 0 1px;
+  padding: 0.5em;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 0 0.2em;
+}
+.portfolio-menu.selected{
+  background: #326ab2;
+}
+.portfolio-menu:hover{
+  background: #326ab2;
+  transition: 0.5s;
+  box-shadow: 0 0 9px 0 deepskyblue inset;
+  border-radius: 4px;
+}
 .portfolio-card{
-  width: 95%;
-  height: 90%;
-  background: rgba(0, 0, 0, 0.8);
+  width: 98%;
+  height: 95%;
   margin: auto;
-  box-shadow: 0 0 0px 1px #f6e58a;
   border-radius: 3px;
   overflow: hidden;
 }
