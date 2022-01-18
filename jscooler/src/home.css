@@ -1,0 +1,424 @@
+.home-page {
+    /*
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+    overflow: hidden;
+    */
+}
+.home-page-elements{
+    width: 100%;
+    z-index: 2;
+}
+.hp-elements{
+    margin-top: -10em;
+}
+
+.loading-point {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: none;
+}
+
+.lp-point-container {
+    display: inline-block;
+}
+
+.lp-point {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: #C3D12F;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.lp-point:hover {
+    transform: scale(2);
+    transition: .5s ease-in-out;
+}
+
+.lp-point:hover .lp-border {
+    display: none;
+}
+
+.lp-border {
+    box-sizing: content-box;
+    width: 1.9em;
+    height: 1.9em;
+    background: transparent;
+    border-radius: 50%;
+    animation: point-animation 1s ease-in-out infinite;
+    border: 1px solid #C3D12F;
+}
+
+.logo-ico-cover {
+    background: white;
+    border-radius: 4em;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    width: 12em;
+    height: 12em;
+    top: 70%;
+    transform: scale(0) translate(-55%, -50%);
+}
+
+.logo-ico {
+    position: relative;
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10em;
+}
+
+#logo-ico-u {
+    fill: transparent;
+    stroke: #C3D12F;
+    stroke-width: .2;
+    stroke-dasharray: 109.442;
+    stroke-dashoffset: 109.442;
+}
+
+.logo-ico-angels {
+    padding-left: 2.4em;
+    padding-top: 1em;
+}
+
+.logo-ico-angle1 {
+    width: 0;
+    height: 0;
+    border-left: 25px solid #C3D12F;
+    border-bottom: 39px solid transparent;
+    transform: rotateZ(-46deg) scale(1);
+}
+
+.logo-ico-angle2 {
+    width: 0;
+    height: 0;
+    margin-top: -0.4em;
+    margin-left: -0.4em;
+    border-left: 17px solid #2e2e2e;
+    border-bottom: 26px solid transparent;
+    transform: rotateZ(-89deg) scale(1);
+}
+
+.logo-text {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.logo-text-container {
+    display: inline-block;
+}
+
+.lt-letter {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.lt-t-1 {
+    width: 59px;
+    overflow: hidden;
+}
+
+.lt-t-1 img {
+    transform: translate(-140px, 0);
+    transition: .2s;
+}
+
+.lt-t-1:hover img {
+    transform: translate(-70px, 0);
+    transition: .2s;
+}
+
+.lt-o {
+    overflow: hidden;
+    width: 58px;
+    margin-left: -4px;
+    margin-right: 4px;
+}
+
+.lt-o img {
+    transform: translate(0px, -120px);
+    transition: .2s;
+}
+
+.lt-o:hover img {
+    transform: translate(-68px, 0);
+    transition: .2s;
+}
+
+.lt-u {
+    overflow: hidden;
+    height: 63px;
+}
+
+.lt-u img {
+    transition: .2s;
+    transform: translate(0, 120px);
+}
+
+.lt-u:hover img {
+    transform: translate(0, -68px);
+    transition: .2s;
+}
+
+.lt-c {
+    margin-left: 4px;
+    margin-right: 4px;
+    overflow: hidden;
+    width: 64px;
+}
+
+.lt-c img {
+    transform: translate(163px, 0);
+    transition: .2s;
+}
+
+.lt-c:hover img {
+    transform: translate(-68px, 0);
+    transition: .2s;
+}
+
+.lt-h {
+    position: relative;
+    height: 87px;
+    overflow: hidden;
+}
+
+.lt-h img {
+    transition: .2s;
+    transform: translate(0, -180px);
+}
+
+.lt-h:hover img {
+    transform: translate(0, -90px);
+    transition: .2s;
+}
+
+.lt-i {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 10px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.lt-i img {
+    transform: translate(-100px, 0);
+    transition: .2s;
+}
+
+.lt-i:hover img {
+    transform: translate(0, -84px);
+    transition: .2s;
+}
+
+.lt-t-2 {
+    position: relative;
+    height: 70px;
+    width: 29px;
+    overflow: hidden;
+}
+
+.lt-t-2 img {
+    transform: translate(34px, 0);
+    transition: .2s;
+}
+
+.lt-t-2:hover img {
+    transform: translate(-34px, 0);
+    transition: .2s;
+}
+
+.scroll-down-container {
+    color: wheat;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: none;
+}
+
+.scroll-down-btn {
+    display: inline-block;
+    font-family: cursive;
+    font-size: 6em;
+    transform: rotateZ(90deg);
+    animation: down-pointer-animation 1s infinite;
+}
+
+.slogan-container {
+    text-align: center;
+    color: #C3D12F;
+    margin-top: 1em;
+    font-size: 1.4em;
+    font-family: fnt-head;
+}
+
+.ml5 {
+    position: relative;
+}
+
+.ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+}
+
+.ml5 .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #808080;
+    transform-origin: 0.5 0;
+    opacity: 0;
+}
+
+.ml5 .line1 {
+    top: -0.2em;
+}
+
+.ml5 .line2 {
+    top: 0.4em;
+}
+
+.ml5 .ampersand {
+    font-weight: 400;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+}
+
+.ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+    margin: 0 -7px;
+}
+@media screen and (max-width: 320px) {
+    .home-page-elements{
+        zoom: 0.5;
+    }
+    .nav-bar-container{
+        zoom: 0.55;
+    }
+    .nb-navigations{
+        display: none;
+    }
+    .navigation-buttons{
+        zoom: 0.55 !important;
+    }
+    .planets{
+        zoom: 0.25 !important;
+    }
+    .planets-info{
+        zoom: 0.55;
+    }
+    .ss-info-container{
+        zoom: 0.5;
+    }
+    .rplanet{
+        zoom: 0.4;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .home-page-elements{
+        zoom: 0.6;
+    }
+    .nav-bar-container{
+        zoom: 0.55;
+    }
+    .nb-navigations{
+        display: none !important;
+    }
+    .nb-logo-container{
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .navigation-buttons{
+        zoom: 0.55 !important;
+    }
+    .planets{
+        zoom: 0.2 !important;
+    }
+    .planets-info{
+        zoom: 0.55;
+    }
+    .ss-info-container{
+        zoom: 0.8;
+    }
+    .rplanet{
+        zoom: 0.4;
+    }
+    .cu-body{
+        zoom: 0.7;
+        flex-flow: column !important;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {
+    .home-page-elements{
+        zoom: 0.6;
+    }
+    .nav-bar-container{
+        zoom: 0.6;
+    }
+    .navigation-buttons{
+        zoom: 0.55 !important;
+    }
+    .planets{
+        zoom: 0.3 !important;
+    }
+    .planets-info{
+        zoom: 0.55;
+    }
+    .ss-info-container{
+        zoom: 0.9;
+    }
+    .rplanet{
+        zoom: 0.5;
+    }
+    .cu-body{
+        zoom: 0.8;
+        flex-flow: column !important;
+    }
+    .our-clients-conatiner .container{
+        zoom: 0.6;
+    }
+    .mi-slider nav a{
+        font-size: 27px;
+        padding: 40px 10px 30px 14px;
+        margin: 0 3em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .home-page-elements{
+        zoom: 1;
+    }
+}
+@media screen and (min-width: 900px) {
+    .home-page-elements{
+        zoom: 1;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .home-page-elements{
+        zoom: 1;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .home-page-elements{
+        zoom: 1;
+    }
+}

@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: fnt-head;
+    src: url(fonts/fnt1.ttf);
+}
+@font-face {
+    font-family: fnt-body;
+    src: url(fonts/fnt2.ttf);
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: fnt-body;
+    font-size: 1em;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+a{
+    color: white;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.mid-hid{
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+.mid-itm{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 -3px;
+}
+.top-itm{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -3px;
+}
+.center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.center-v{
+    align-items: center;
+}
+.ar{
+    direction: rtl;
+}
+.menu-btn{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .2s ease-in-out;
+    position: relative;
+}
+.menu-btn:hover{
+    transition: .2s ease-in-out;
+    box-shadow: inset 0 0 26px 12px rgba(0, 0, 0, 0.7), 0 0 5px 0;
+    border-radius: 5px;
+}
+.full-width{
+    width: 100%;
+}
+.no-cpu {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+}
+.fp-tableCell{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+.ltr{
+    direction: ltr;
+}
+.rtl{
+    direction: rtl;
+}
+.hidden{
+    display: none !important;
+}
+.inline-block{
+    display: inline-block;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+.cp-field-input input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+.flex-3{
+    flex: 3;
+}
+.flex-4{
+    flex: 3;
+}
+.flex-5{
+    flex: 3;
+}
+.flex-6{
+    flex: 3;
+}
+.pointer{
+    cursor: pointer;
+}
